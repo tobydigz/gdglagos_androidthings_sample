@@ -26,10 +26,11 @@ dependencies {
     })
     compile "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
     testCompile "junit:junit:$rootProject.ext.junitVersion"
-    compile 'com.google.firebase:firebase-database:10.2.0'
-    compile 'com.google.firebase:firebase-crash:10.2.0'
+    compile "com.google.firebase:firebase-database:$rootProject.ext.firebaseLibraryVersion"
+    compile "com.google.firebase:firebase-crash:$rootProject.ext.firebaseLibraryVersion"
     provided 'com.google.android.things:androidthings:0.1-devpreview'
 }
+
 
 
 
