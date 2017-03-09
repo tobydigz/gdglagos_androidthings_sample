@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String ledState = "Led Off";
         if (binding.toggleLedButton.isChecked()) {
             ledOn = true;
-
             ledState = "Led On";
         }
         setLedStateText(ledState);
