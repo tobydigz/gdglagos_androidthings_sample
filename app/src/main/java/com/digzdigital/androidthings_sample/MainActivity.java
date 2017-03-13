@@ -126,4 +126,10 @@ monitorLedState();
         if (pirGpio !=null)pirGpio.close();
 
     }
+
+    @Override
+    protected void onStop(){
+        super.onStop();
+        pirGpio.unregisterGpioCallback(callback);
+    }
 }
